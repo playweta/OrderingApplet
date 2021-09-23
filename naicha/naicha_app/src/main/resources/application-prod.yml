@@ -1,0 +1,19 @@
+# 自定义配置
+my:
+  properties:
+    swaggerEnable: true
+    filePath:
+      imageFileRootPath: /home/naicha/naicha-img/
+
+
+# 日志配置
+logging:
+  level:
+    root: error
+    com.yu: warn
+  # 可以日志文件的指定完整的路径 不指定路径在当前项目下生成springboot.log日志
+  path: /home/log/naicha_app
+  file:
+    max-size: 10MB # 日志归档的最大大小, 到了该大小就压缩打包
+    max-history: 10 # 最多保存日志归档文件的数量
+

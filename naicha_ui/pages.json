@@ -1,0 +1,117 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}, {
+			"path": "pages/menu/menu",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffff",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		}, {
+			"path": "pages/take-foods/take-foods",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		}, {
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}, {
+			"path": "pages/remark/remark",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/orders/orders",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}, {
+			"path": "pages/orders/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}, {
+			"path": "pages/mine/userinfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}, {
+			"path": "pages/services/services",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}, {
+			"path": "pages/services/zai_xian_ke_fu/zai_xian_ke_fu",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#919293",
+		"selectedColor": "#97AF13",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/menu/menu",
+			"text": "点餐",
+			"iconPath": "static/images/tabBar/drink.png",
+			"selectedIconPath": "static/images/tabBar/drink_selected.png"
+		}, {
+			"pagePath": "pages/take-foods/take-foods",
+			"text": "取餐",
+			"iconPath": "static/images/tabBar/take.png",
+			"selectedIconPath": "static/images/tabBar/take_selected.png"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"text": "我的",
+			"iconPath": "./static/images/tabBar/mine.png",
+			"selectedIconPath": "./static/images/tabBar/mine_selected.png"
+		}]
+	},
+	"navigateToMiniProgramAppIdList": [
+		"wx959c8c1fb2d877b5"
+	]
+}

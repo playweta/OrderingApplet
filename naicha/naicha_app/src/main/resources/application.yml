@@ -1,0 +1,44 @@
+server:
+  port: 8101
+  servlet:
+    context-path: /naicha-api
+
+
+# mybatis-plus配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 下划线转驼峰
+  type-aliases-package: com.yu.**.entity.** # *Mapper.xml里resultType的类型别名
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  global-config:
+    db-config:
+      id-type: auto # id生成策略
+
+spring:
+  profiles:
+    active: dev   # dev:开发环境 prod:生产环境
+  jackson:
+    time-zone: GMT+8
+    dateFormat: yyyy-MM-dd HH:mm:ss # date format
+
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        min-idle: 8
+        max-idle: 500
+        max-active: 2000
+        max-wait: 10000
+    timeout: 5000
+
+  # 数据源
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/naicha?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: root

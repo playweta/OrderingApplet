@@ -1,0 +1,17 @@
+# 自定义配置
+my:
+  properties:
+    swaggerEnable: true
+    filePath:
+      imageFileRootPath: E:\IDEA\Handling_items_image\naicha-master\naicha-img # 静态图片的本地路径
+
+# 日志配置
+logging:
+  level:
+    root: info
+    com.yu: trace
+  # 日志的路径，不指定路径在当前项目下生成spring.log日志
+  path: C:/log/naicha_system
+  file:
+    max-size: 10MB  # 日志归档的最大大小, 到了该大小就压缩打包
+    max-history: 5 # 最多保存日志归档文件的数量
